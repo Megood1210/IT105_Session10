@@ -1,0 +1,25 @@
+| Mục            | Nội dung mô tả                                                                                                |
+|----------------|---------------------------------------------------------------------------------------------------------------|
+| Tên Use Case   | Đăng ký tài khoản                                                                                             |
+|----------------|---------------------------------------------------------------------------------------------------------------|
+| Actor          | Người dùng mới                                                                                                |
+|----------------|---------------------------------------------------------------------------------------------------------------|
+| Mục tiêu       | Cho phép người dùng tạo tài khoản mới để có thể đăng nhập và sử dụng các chức năng của hệ thống học trực tuyến|                                                                     
+|----------------|---------------------------------------------------------------------------------------------------------------| 
+| Điều kiện trước| - Người dùng chưa có tài khoản trong hệ thống                                                                 |
+|                | - Trang đăng ký hiển thị đầy đủ các trường thông tin cần thiết (Họ tên, Email, Mật khẩu, Xác nhận mật khẩu)   |                                                                                                                                                                                                                                                                                                          
+|----------------|---------------------------------------------------------------------------------------------------------------| 
+| Luồng chính    | Người dùng truy cập trang "Đăng ký"                                                                           |
+|                | Hệ thống hiển thị form nhập thông tin                                                                         |
+|                | Người dùng nhập thông tin đầy đủ                                                                              |
+|                | Người dùng nhấn nút "Đăng ký"                                                                                 |
+|                | Hệ thống kiểm tra thông tin hợp lệ                                                                            |
+|                | Hệ thống lưu thông tin người dùng mới vào cơ sở dữ liệu                                                       |
+|                | Hệ thống hiển thị thông báo “Đăng ký thành công” và chuyển hướng đến trang đăng nhập                          | 
+|----------------|---------------------------------------------------------------------------------------------------------------| 
+| Ngoại lệ       | Người dùng để trống thông tin -> Hệ thống hiển thị thông báo "Vui lòng nhập đầy đủ thông tin"                 |
+|                | Email đã được đăng ký -> Hệ thống thông báo "Email này đã tồn tại".                                           |
+|                | Mật khẩu và xác nhận mật khẩu không khớp → Hệ thống hiển thị "Mật khẩu xác nhận không trùng khớp"             |
+|----------------|---------------------------------------------------------------------------------------------------------------| 
+| Điều kiện sau  |- Tài khoản mới được tạo thành công trong hệ thống                                                             |
+|                |- Người dùng có thể đăng nhập bằng thông tin vừa đăng ký                                                       |
